@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Kalkulator - made by JŚ
+</title>
+<script type="text/javascript">
+function dodawanie() {
+var a=prompt("OK. Zaczynajmy! Podaj dowolną liczbę!");
+var b=prompt("Świetnie! Teraz podaj drugą dowolną liczbę");
+var wynikdodawania=Number(a)+Number(b);
+alert("Wynik dodawania (suma) Twoich dwóch liczb wynosi "+wynikdodawania);
+}
+function odejmowanie() {
+var a=prompt("OK. Zaczynajmy! Podaj dowolną liczbę");
+var b=prompt("Świetnie! Teraz poproszę o drugą dowolną liczbę");
+var wynikodejmowania=Number(a)-Number(b);
+alert("Wynik odejmowania (różnica) Twoich dwóch liczb wynosi "+wynikodejmowania);
+}
+function mnożenie() {
+var a=prompt("Zaczynajmy! Podaj mi dowolną liczbę");
+var b=prompt("Świetnie! Teraz poproszę o drugą dowolną liczbę");
+var wynikmnożenia=Number(a)*Number(b);
+alert("Wynik mnożenia (iloczyn) Twoich dwóch liczb wynosi "+wynikmnożenia);
+}
+function dzielenie() {
+var a=prompt("Podaj mi proszę dowolną liczbę");
+var b=prompt("Dzięki! Teraz poproszę o drugą dowolną liczbę");
+var wynikdzielenia=Number(a)/Number(b);
+alert("Wynik dzielenia (iloraz) Twoich dwóch liczb wynosi "+wynikdzielenia);
+}
+function modulo() {
+var a=prompt("Poćwiczmy MODULO! Podaj mi dowolną liczbę");
+var b=prompt("Podaj mi teraz drugą dowolną liczbę");
+var wynikmodulo=Number(a)%Number(b);
+alert("Reszta z dzielenia (modulo) Twoich dwóch liczb wynosi "+wynikmodulo);
+}
+function potega() {
+var a=prompt("Poćwiczmy obliczanie potęgi z danej liczby! Podaj mi dowolną liczbę");
+var b=prompt("Podaj wartość potęgi, do której zamierzasz podnieść wpisaną wcześniej liczbę");
+var wynikPotega=Number(a) ** Number(b);
+alert("Wynik działania wynosi: "+wynikPotega+"!");
+}
+</script>
+</head>
+<body bgcolor="darkblue">
+<p><center><marquee><h1><font color="yellow">Sprawdź, jak działa mój kalkulator!</font><h1></marquee></center></p>
+<hr>
+<br>
+<br>
+<center>
+	<input type="button" onclick="dodawanie()" value="dodawanie" style="width:60%"/></br>
+	<input type="button" onclick="odejmowanie()" value="odejmowanie"style="width:60%"/></br>
+	<input type="button" onclick="mnożenie()" value="mnożenie"style="width:60%"/></br>
+	<input type="button" onclick="dzielenie()" value="dzielenie"style="width:60%"/></br>
+	<input type="button" onclick="modulo()" value="modulo/reszta z dzielenia"style="width:60%"/></br>
+	<input type="button" onclick="potega()" value="potęga danej liczby"style="width:60%"/></br>
+</center>
+
+</body>
+</html>
